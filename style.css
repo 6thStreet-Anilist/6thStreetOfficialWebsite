@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'CyberPunk';
+  src: url('Fonts/CyberwayRiders.ttf') format('ttf');
+}
+
+
+header {
+  background-color: rgba(14, 14, 30, 0.8); /* Updated with 80% opacity */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  border-radius: 0 0 20px 20px; /* Adjust the values as needed */
+}
+
+.parallax-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax-image {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.left-image,
+.right-image {
+  position: absolute;
+  top: 45%; /* Adjustable variable for vertical position */
+  bottom: 0;
+  width: 200px; /* Adjust the width as needed */
+  transform: translateY(-50%); /* Centers the images vertically */
+}
+
+/* EDITS MAIN WINDOW TITLE (Which is yellow) */
+.parallax-title {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+.text-outline {
+  /* CHANGE COLORS LATER */
+  font-family: 'papyrus', sans-serif;
+  color: #ead623;
+  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Add cursor pointer for clickability */
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  transition: transform 0.3s ease; /* Add transition for animation */
+}
+
+.logo img:hover {
+  transform: rotate(360deg); /* Add rotation animation on hover */
+  transition: transform 0.3s ease; /* Add transition for animation */
+}
+
+.logo-title {
+  font-size: 1.8rem;
+  font-family: 'Copperplate Gothic Light', sans-serif;
+}
+
+/*
+body {
+  
+}
+*/
+
+.title-move {
+  display: contents;
+  position: absolute;
+}
+
+#main-content {
+  background-image: url('https://papers.co/wallpaper/papers.co-bl95-art-night-anime-city-36-3840x2400-4k-wallpaper.jpg');
+  background-size: 170%;
+  background-repeat: no-repeat;
+}
+
+
+.left-image {
+  left: 0;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/023/257/929/original/japanese-house-with-autumn-leaves-ai-generated-free-png.png');
+}
+
+.right-image {
+  right: 0;
+  background-image: url('https://png.pngtree.com/png-clipart/20230414/ourmid/pngtree-beautiful-house-isometric-anime-style-png-image_6703571.png');
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.hidden-tab {
+  display: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transition for color and transform properties */
+  color: #fff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  padding: 10px 20px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+}
+
+nav ul li.selected {
+  color: #a4458c; /* Set the color of the selected button */
+}
+
+nav ul li:not(.selected):hover {
+  color: #ff93e6; /* Set the color of other buttons on hover */
+  animation: shake 0.7s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  header {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    width: 120px;
+    height: 120px;
+    margin-right: 0;
+  }
+
+  .logo-title {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+    font-size: 1.4rem;
+    padding: 5px 10px;
+    border-width: 1px;
+    border-radius: 3px;
+  }
+}
+
+footer {
+  background-color: rgba(14, 14, 30, 0.8); /* Updated with 80% opacity */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-row {
+  margin-bottom: 10px;
+}
+
+.footer-row a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#new-section {
+  background-color: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+#new-section h2 {
+  font-size: 32px;
+  /* Vertical position of the picture */
+  margin-bottom: 0px;
+}
+
+#new-section p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.calendar {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 1000px; /* Adjust the maximum width as needed */
+  height: 1000px; /* Adjust the height as needed */
+}
+.calendar-bg {
+  background-image: url('https://wallpapers.com/images/hd/anime-night-city-f4uhf40u30rw7oxf.jpg');
+  background-size: cover;
+}
+
+.text-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-column {
+  width: 30%;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+#meet-the-team-content {
+  background-color: rgb(76, 14, 112);
+  color: rgb(255, 255, 255);
+  height: 450px; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.team-title {
+  font-size: 72px;
+  margin-top: 50px;
+}
+
+.team-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 20px;
+}
+
+.team-column {
+  flex-basis: calc(33.33% - 50px); /* Adjust the column spacing as needed */
+  text-align: center;
+  margin-right: 40px; /* Increase this value for larger horizontal distance */
+}
+
+.team-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-column h3 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.team-column p {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.gif-container img {
+  max-width: 100%;
+  max-height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .text-columns {
+    flex-wrap: wrap;
+  }
+  
+  .text-column {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
