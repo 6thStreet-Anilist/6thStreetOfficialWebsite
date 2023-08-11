@@ -10,14 +10,15 @@ body {
 
 
 header {
-  background-color: rgba(14, 14, 30, 0.8); /* Updated with 80% opacity */
-  padding: 20px;
+  background-color: rgb(14 14 20);
+  padding: 23px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: 'Roboto', sans-serif;
-  color: #fff;
-  border-radius: 0 0 20px 20px; /* Adjust the values as needed */
+  color: white;
+  border-radius: 0 0 65px 65px;
+  height: 40px;
 }
 
 .parallax-container {
@@ -96,15 +97,16 @@ body {
 }
 
 #main-content {
-  background-image: url('https://papers.co/wallpaper/papers.co-bl95-art-night-anime-city-36-3840x2400-4k-wallpaper.jpg');
-  background-size: 170%;
+  background-image: url('VisualStorage/bg.jpg');
+  background-size: 90%;
   background-repeat: no-repeat;
+  background-color: #151A1D;
 }
 
 
 .left-image {
   left: 0;
-  background-image: url('https://static.vecteezy.com/system/resources/previews/023/257/929/original/japanese-house-with-autumn-leaves-ai-generated-free-png.png');
+  background-image: url('VisualStorage/asset\ test\ 1.png');
 }
 
 .right-image {
@@ -260,6 +262,8 @@ footer {
   padding: 20px;
   align-items: center;
   text-align: center;
+  background-image: url(VisualStorage/bg2.png);
+  background-color: #cccccc;
 }
 
 .team-title {
@@ -321,4 +325,9 @@ footer {
     flex-basis: 100%;
     margin-bottom: 20px;
   }
+}
+
+.buttons {
+  outline: white;
+  outline-width: 3px;
 }
