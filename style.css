@@ -212,7 +212,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 300px;
-  visibility: hidden;
+  display: none;
 }
 
 .register-form > form {
@@ -277,7 +277,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 300px;
-    visibility: hidden;
+    display: none;
 }
 
 .login-form > form {
