@@ -10,14 +10,15 @@ body {
 
 
 header {
-  background-color: rgba(14, 14, 30, 0.8); /* Updated with 80% opacity */
-  padding: 20px;
+  background-color: rgb(14 14 20);
+  padding: 23px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: 'Roboto', sans-serif;
-  color: #fff;
-  border-radius: 0 0 20px 20px; /* Adjust the values as needed */
+  color: white;
+  border-radius: 0 0 65px 65px;
+  height: 40px;
 }
 
 .parallax-container {
@@ -96,15 +97,16 @@ body {
 }
 
 #main-content {
-  background-image: url('https://papers.co/wallpaper/papers.co-bl95-art-night-anime-city-36-3840x2400-4k-wallpaper.jpg');
-  background-size: 170%;
+  background-image: url('VisualStorage/bg.jpg');
+  background-size: 90%;
   background-repeat: no-repeat;
+  background-color: #151A1D;
 }
 
 
 .left-image {
   left: 0;
-  background-image: url('https://static.vecteezy.com/system/resources/previews/023/257/929/original/japanese-house-with-autumn-leaves-ai-generated-free-png.png');
+  background-image: url('VisualStorage/asset\ test\ 1.png');
 }
 
 .right-image {
@@ -205,6 +207,151 @@ footer {
   text-decoration: underline;
 }
 
+.register-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  display: none;
+}
+
+.register-form > form {
+  padding: 30px;
+  background-color: #000000;
+  border: solid 3px #ffc107;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.register-form > form > fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+    background-color: #000000;
+    padding: 20px;
+    border: solid 3px #ffc107;
+}
+
+.register-form > form > fieldset > label {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffc107;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.register-form > form > fieldset > input {
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.register-form > form > fieldset > button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: #ffc107;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.register-form > form > fieldset > button:hover {
+    background-color: #000000;
+}
+
+.btncolor{
+  color: #ffffff;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    display: none;
+}
+
+.login-form > form {
+    padding: 30px;
+    background-color: #000000;
+    border: solid 3px #ffc107;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-form > form > fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+
+.login-form > form > fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+  background-color: #000000;
+  padding: 20px;
+  border: solid 3px #ffc107;
+}
+
+.login-form > form > fieldset > label {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffc107;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.login-form > form > fieldset > input {
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.login-form > form > fieldset > button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  outline: none;
+  background-color: #ffc107;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.login-form > form > fieldset > button:hover {
+  background-color: #010101;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  margin: 0 auto;
+  width: 400px;
+  color: #ffc107;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
 #new-section {
   background-color: #000;
   color: #fff;
@@ -260,6 +407,8 @@ footer {
   padding: 20px;
   align-items: center;
   text-align: center;
+  background-image: url(VisualStorage/bg2.png);
+  background-color: #cccccc;
 }
 
 .team-title {
@@ -321,4 +470,9 @@ footer {
     flex-basis: 100%;
     margin-bottom: 20px;
   }
+}
+
+.buttons {
+  outline: white;
+  outline-width: 3px;
 }

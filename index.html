@@ -13,25 +13,26 @@
     <nav>
       <ul>
         <li id="main" class="selected">Main</li>
-        <li id="calendar">Calendar</li>
+        <li id="calendar">calender</li>
         <li id="badges">Badges</li>
         <li id="point-shop">Point Shop</li>
-        <li id="my-account">My Account</li>
+        <li href="#" onclick="return checkLoggedIn()" id="my-account">My Account</li>
       </ul>
     </nav>
   </header>
   
   <!-- Content for the respective tabs -->
 
-
   <div class="content-section" id="main-content">
+
     <!--CHANGE THE SIZE OF THE PICTURES HERE-->
     <!-- FIRST PARALLAX -->
     <div class="parallax-container">
-      <div data-speed="0.8" style="width: 600px; height: 600px;" class="left-image parallax-image"></div>
+      <div data-speed="0.8" style="width: 387px; height: 1509px;" class="left-image parallax-image"></div>
       <div data-speed="0.8" style="width: 600px; height: 600px;" class="right-image parallax-image"></div>
       <div class="parallax-title">
         <h1 data-speed="0.1" class="text-outline">The 6th Street</h1>
+        
       </div>
     </div>
     <!-- SECTION 2 -->
@@ -101,14 +102,53 @@
 
   <div class="content-section hidden-tab" id="my-account-content">
     <h2>My Account Tab Content</h2>
-    <!-- Add your point shop tab content here -->
+    <!-- Add your my account tab content here -->
+      <div id="registerW" class="register-form">
+        <!-- INITIALLY HIDDEN, WILL BE SHOWN AFTER USER CLICKS A LINK ON LOGIN WINDOW -->
+        <form action="/register" method="POST">
+            <fieldset>
+                <legend class="btncolor">Registration Form</legend>
+    
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+    
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+    
+                <button id="yellow-btn">Register</button>
+            </fieldset>
+        </form>
+    </div>
+    
+    
+    <div id="loginW" class="login-form">
+      <form action="/login" method="POST">
+          <fieldset>
+              <legend class="btncolor">Login Form</legend>
+    
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required>
+    
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+              <!-- TODO: ADD LINK TO SWITCH TO REGISTER WINDOW -->
+              <button id="darkblue-btn">Login</button>
+          </fieldset>
+      </form>
+    </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 <footer>
   <div class="footer-row">
-    <p>Thank you for visiting! I hope you will come here again!</p>
+    <p>Thank you for participating! I hope you will come here again!</p>
   </div>
   <div class="footer-row">
     <p>&copy; 2023 6thStreet. All rights reserved(Maybe).</p>
