@@ -207,6 +207,151 @@ footer {
   text-decoration: underline;
 }
 
+.register-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  visibility: hidden;
+}
+
+.register-form > form {
+  padding: 30px;
+  background-color: #000000;
+  border: solid 3px #ffc107;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.register-form > form > fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+    background-color: #000000;
+    padding: 20px;
+    border: solid 3px #ffc107;
+}
+
+.register-form > form > fieldset > label {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffc107;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.register-form > form > fieldset > input {
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.register-form > form > fieldset > button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: #ffc107;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.register-form > form > fieldset > button:hover {
+    background-color: #000000;
+}
+
+.btncolor{
+  color: #ffffff;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    visibility: hidden;
+}
+
+.login-form > form {
+    padding: 30px;
+    background-color: #000000;
+    border: solid 3px #ffc107;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-form > form > fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+
+.login-form > form > fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+  background-color: #000000;
+  padding: 20px;
+  border: solid 3px #ffc107;
+}
+
+.login-form > form > fieldset > label {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffc107;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.login-form > form > fieldset > input {
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.login-form > form > fieldset > button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  outline: none;
+  background-color: #ffc107;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.login-form > form > fieldset > button:hover {
+  background-color: #010101;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  margin: 0 auto;
+  width: 400px;
+  color: #ffc107;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
 #new-section {
   background-color: #000;
   color: #fff;

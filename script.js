@@ -6,16 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const parallaxContainer = document.querySelector('.parallax-container');
     const parallaxElements = document.querySelectorAll('.parallax-image, .parallax-title');
 
-// 2. Loop over tabs to add click event listener
-tabs.forEach(function(tab) {
-  tab.addEventListener('click', function() {
-    // 3. Get id of clicked tab
-    const tabId = tab.id;
+// Loop over tabs to add click event listener
+// tabs.forEach(function(tab) {
+//   tab.addEventListener('click', function() {
+//     // Get id of clicked tab
+//     const tabId = tab.id;
 
-    // 4. Show content section with same id as clicked tab
-    showContentSection(tabId);
-  });
-});
+//     // 4. Show content section with same id as clicked tab
+//       //MUST CHANGE LOGIC SO MY ACCOUNT IS NOT AFFECTED BY THIS
+//     showContentSection(tabId);
+//   });
+// });
 
 // 5. Define function to show content section
 function showContentSection(sectionId) {
@@ -49,6 +50,11 @@ function showContentSection(sectionId) {
   
     tabs.forEach(function(tab) {
       tab.addEventListener('click', function() {
+        //logic shall pass the my account window for a check as 
+        // My Account need to be checked if user is logged in or not
+        if(tab.id = "my-account"){
+          checkLoggedIn();
+        }
         const sectionId = tab.id + '-content';
         showContentSection(sectionId);
         selectTab(tab);
@@ -82,3 +88,15 @@ function showContentSection(sectionId) {
     }  
     window.addEventListener('scroll', parallaxScroll);
   });
+
+  //NOT YET WORKING
+  function checkLoggedIn() {
+    if (document.cookie.indexOf('user_id=') !== -1) {
+      // The user is currently logged in, display the "My Account" window
+      document.getElementById('my-account').style.display = 'block';
+    } else {
+      // The user is not logged in, display the login window
+      document.getElementById('login').style.display = 'block';
+    }
+  }  
+  
