@@ -2,7 +2,7 @@ function showButton() {
 //hide reg + login
 //"visible" works here, but not afterwards
 document.getElementById("loginW").style.display = 'block';
-document.getElementById("registerW").style.display = 'block';
+//document.getElementById("registerW").style.display = 'block';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
